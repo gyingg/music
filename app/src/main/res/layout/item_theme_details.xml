@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/theme_details_userimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/details_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/theme_details_userimg"
+        android:layout_toRightOf="@+id/theme_details_userimg"
+        android:text=""
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxEms="20"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/details_userfrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/theme_details_userimg"
+        android:layout_below="@+id/details_username"
+        android:layout_toRightOf="@+id/theme_details_userimg"
+        android:text=""
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxEms="30"
+        android:textColor="@color/color_999999"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/theme_layout_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/theme_details_userimg"
+        android:layout_marginRight="@dimen/marginRight"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/img_zan"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:padding="3dp"
+            android:src="@mipmap/icon_theme_details_unzan" />
+
+        <TextView
+            android:id="@+id/details_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_999999"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details_username"
+        android:layout_below="@+id/theme_details_userimg"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:id="@+id/layout_huifu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details_context"
+        android:layout_below="@+id/details_context"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="38dp"
+        android:background="@drawable/text_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/details_other_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:text="回复: 哎哟不错哦，哈哈哈哈或或或或或或或或哈哈哈哈好h"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

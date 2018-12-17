@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/orange_back"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="6dp"
+            android:src="@mipmap/back" />
+
+
+        <ImageView
+            android:id="@+id/ph_title_right_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:src="@mipmap/music" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_xiaowei_bg_all">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="无线连接"
+            android:textColor="@color/color_FB8352"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/layout_wifi_name"
+                android:layout_width="224dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/wifi_rectangle">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/wifi" />
+
+                <TextView
+                    android:id="@+id/et_wifi_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/touming"
+                    android:gravity="center_vertical"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_999999"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_wifi_psw"
+                android:layout_width="222dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/layout_wifi_name"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/wifi_rectangle">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:src="@mipmap/wifi_password" />
+
+                <EditText
+                    android:id="@+id/et_wifi_psw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@color/touming"
+                    android:hint="请输入wifi密码"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/start_wifi"
+                android:layout_width="213dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/layout_wifi_psw"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:background="@mipmap/orangr_background"
+                android:gravity="center"
+                android:text="开始配置"
+                android:textColor="@color/color_FB7A51" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

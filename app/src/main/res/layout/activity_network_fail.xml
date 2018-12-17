@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/orange_back"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="6dp"
+            android:src="@mipmap/back" />
+
+
+        <ImageView
+            android:id="@+id/ph_title_right_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:src="@mipmap/music" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_xiaowei_bg_all">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="关联失败"
+            android:textColor="@color/color_FB8352"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/fial_img"
+                android:layout_width="248dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_fail_network" />
+
+            <TextView
+                android:id="@+id/text_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fial_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:text="检测设配名是否正确，再次关联"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/start_wifi"
+                android:layout_width="213dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/text_fail"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="46dp"
+                android:background="@mipmap/orangr_background"
+                android:gravity="center"
+                android:text="重新关联"
+                android:textColor="@color/color_FB7A51"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

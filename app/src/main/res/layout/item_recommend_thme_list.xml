@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/layout_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/test_one" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/music_cover"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/moren" />
+
+        <ImageView
+            android:id="@+id/music_player_type"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_theme_music_stop" />
+
+        <TextView
+            android:id="@+id/theme_one_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="190dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/music_cover"
+            android:singleLine="true"
+            android:text="那现年很冒险的梦那现年很冒险的梦"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/theme_one_music_sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="180dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/music_cover"
+            android:singleLine="true"
+            android:text="那现年很冒险的梦"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/theme_one_music_other"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            android:src="@mipmap/icon_music_theme_other"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_commend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:padding="6dp"
+                android:src="@mipmap/icon_theme_commend_b" />
+
+            <TextView
+                android:id="@+id/commend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/layout_commend"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:padding="6dp"
+                android:src="@mipmap/icon_theme_share_b" />
+
+            <TextView
+                android:id="@+id/share_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/layout_share"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/theme_one_music_zan"
+                android:layout_width="32dp"
+                android:layout_height="28dp"
+                android:padding="6dp"
+                android:src="@mipmap/icon_theme_details_unzan" />
+
+            <TextView
+                android:id="@+id/zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

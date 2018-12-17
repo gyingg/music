@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="319dp"
+        android:layout_height="321dp"
+        android:background="@drawable/white_radius_bg">
+
+        <TextView
+            android:id="@+id/tishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="转出分贝"
+            android:textColor="@color/color_333333"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/tishi_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tishi"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_F2F2F2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/passwordView"
+            android:layout_below="@+id/tishi_view"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/gold" />
+
+            <TextView
+                android:id="@+id/tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="000" />
+
+        </LinearLayout>
+
+
+        <com.future_melody.utils.passwordview.PasswordView
+            android:id="@+id/passwordView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            app:cipherEnable="true"
+            app:isCursorEnable="false"
+            app:passwordLength="6"
+            app:borderColor="@color/color_F2F2F2"
+            app:cipherColor="@color/back"
+            app:passwordPadding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="请输入支付密码" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="160dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@mipmap/queding"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</LinearLayout>

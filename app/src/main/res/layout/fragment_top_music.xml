@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/top_music_day"
+            android:layout_width="48dp"
+            android:layout_height="108dp"
+            android:background="@color/color_f6f6f6">
+
+            <TextView
+                android:id="@+id/day_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="1"
+                android:gravity="center"
+                android:text="日榜"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/top_music_week"
+            android:layout_width="48dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_01B0FE">
+
+            <TextView
+                android:id="@+id/text_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="1"
+                android:gravity="center"
+                android:text="周榜"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/top_music_month"
+            android:layout_width="48dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_f6f6f6">
+
+            <TextView
+                android:id="@+id/text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="1"
+                android:gravity="center"
+                android:text="月榜"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/sp_12" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/top_music_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp">
+        </FrameLayout>
+</LinearLayout>

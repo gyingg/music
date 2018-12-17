@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/black_radius_bg">
+
+        <ImageView
+            android:id="@+id/dialog_pearl_top_img"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_dialog_pearl" />
+
+        <TextView
+            android:id="@+id/dialog_pearl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_pearl_top_img"
+            android:layout_centerHorizontal="true"
+            android:text="黑珍珠奖励"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_pearl_title"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ "
+                android:textColor="#FBCE37 "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dialog_pearl_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#FBCE37 "
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

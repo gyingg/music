@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/btn_toPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+     >
+
+        <TextView
+            android:id="@+id/star_music_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="01"
+            android:visibility="gone"
+            android:textColor="@color/color_333333"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/gif_player"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/star_music_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="5dp" />
+
+        <TextView
+            android:id="@+id/star_music_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/star_music_img"
+            android:layout_toLeftOf="@+id/ll"
+            android:singleLine="true"
+            android:text="zzz"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_333333"
+            android:textSize="13dp" />
+
+        <!--<TextView
+            android:id="@+id/star_music_sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/star_music_img"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/star_music_img"
+            android:singleLine="true"
+            android:text="双子"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/sp_10" />-->
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginRight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/star_music_zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="被点亮10.1次"
+                android:textColor="@color/color_999999"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

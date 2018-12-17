@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:background="@drawable/white_radius_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_333333"
+            android:text="提示"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/dialo_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_333333"
+            android:text=""
+            android:textSize="14sp" />
+        <View
+            android:layout_above="@+id/btn_determine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"/>
+
+            <TextView
+                android:id="@+id/btn_determine"
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="重新登录"
+                android:textColor="@color/color_00AFFD"
+                android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

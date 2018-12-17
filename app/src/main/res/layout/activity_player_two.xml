@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_white_background">
+
+    <ImageView
+        android:id="@+id/player_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/test_one"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/layout_lrc_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_white_background"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/player_title_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:padding="7dp"
+        android:src="@mipmap/back_back" />
+
+
+    <TextView
+        android:id="@+id/music_name_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:text="一万次悲伤"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/music_sing_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_name_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:text="一万次悲伤"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/player_title_share"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="26dp"
+        android:padding="7dp"
+        android:src="@mipmap/icon_player_new_share" />
+
+    <RelativeLayout
+        android:id="@+id/btn_player_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/start_time"
+        android:layout_marginTop="60dp">
+
+        <com.future_melody.widget.cardview.CardViewPager
+            android:id="@+id/music_cover_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_above="@+id/song_name"
+            android:layout_marginTop="16dp"
+            app:card_loop="false" />
+
+        <TextView
+            android:id="@+id/sing_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="不知道写什么-"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sing_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="songName"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_btn_lrc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/start_time"
+        android:layout_below="@+id/music_sing_top"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="90dp"
+        android:visibility="gone">
+
+        <me.wcy.lrcview.LrcView
+            android:id="@+id/lrc_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="暂无歌词"
+            android:textSize="14sp"
+            app:lrcAnimationDuration="1"
+            app:lrcCurrentTextColor="@color/color_00AFFD"
+            app:lrcTextSize="14sp"
+            app:lrcTimelineTextColor="@color/huaxian" />
+    </FrameLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_plaer_new_include"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:maxHeight="3dp"
+        android:paddingEnd="7.5dp"
+        android:paddingLeft="7.5dp"
+        android:paddingRight="7.5dp"
+        android:paddingStart="7.5dp"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:secondaryProgressTint="#808077"
+        android:thumb="@drawable/seekbar_thumb"
+        />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="26dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#6D7AE1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="26dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#7a8db0"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/btn_zan"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="5.5dp"
+        android:padding="3dp"
+        android:src="@mipmap/icon_star_music_zan" />
+
+    <ImageView
+        android:id="@+id/btn_music_type"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="5.5dp"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:src="@mipmap/ic_type_suiji" />
+
+    <include layout="@layout/view_player_new_include" />
+
+</RelativeLayout>

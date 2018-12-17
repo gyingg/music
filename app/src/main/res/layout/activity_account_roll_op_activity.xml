@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.future_melody.activity.AccountRollOutActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/back_back" />
+
+        <TextView
+            android:id="@+id/ph_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="转入TFM"
+            android:textColor="@color/color_333333"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/ph_title_right_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:src="@mipmap/back_music" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fl_account"
+        android:layout_marginTop="46dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="转入账户"
+            android:textColor="@color/color_333333"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="TFM钱包"
+            android:textColor="@color/color_333333"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_ewm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rel"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/tv_cope_code"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_cope_code"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/cope_address"
+        android:text="J8WESDLAGLSDLJAxlaLJ29AdlDK8123JLA"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cope_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/tv_hint"
+        android:textColor="@color/color_00affd"
+        android:text="点击此处复制地址"
+        />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_hint_msg"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="—— 提示 ——"
+        android:textColor="@color/color_666666"
+        android:textSize="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tv_hint_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+
+        />
+
+</RelativeLayout>

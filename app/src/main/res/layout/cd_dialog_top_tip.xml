@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_tip"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red"
+    android:gravity="center"
+    android:minHeight="@dimen/dp_48"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:paddingTop="@dimen/dp_6">
+
+    <ImageView
+        android:id="@+id/iv_tip"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:scaleType="fitXY"
+        android:src="@mipmap/cd_ic_checked_failure"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:lineSpacingExtra="@dimen/dp_3"
+        android:maxLines="3"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"/>
+
+</LinearLayout>

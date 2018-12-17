@@ -1,0 +1,2 @@
+com.franmontiel.persistentcookiejar
+string app_name

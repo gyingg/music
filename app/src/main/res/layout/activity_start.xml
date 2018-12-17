@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:id="@+id/start_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerCrop" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/start_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:src="@drawable/shou_news"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+</FrameLayout>

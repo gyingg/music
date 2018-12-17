@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/xiaowei_radius_top_list">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="31dp">
+
+            <TextView
+                android:id="@+id/text_xiaowei_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="22dp"
+                android:text="xiaowei2345ty"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="27dp"
+                android:text="未连接"
+                android:textColor="@color/color_333333"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/xiaowei_radius_list">
+
+            <TextView
+                android:id="@+id/text_hiti_shouyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="28dp"
+                android:text="累计收益"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hei_money_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_hiti_shouyi"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="8dp"
+                android:text="123456789"
+                android:textColor="@color/color_666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_relieve_xiaowei_type"
+                android:layout_width="84dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/hei_money_num"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/xiaowei_radius_relieve_bule"
+                android:gravity="center"
+                android:text="播放进度"
+                android:textColor="#01B0FE"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_reset_xiaowei"
+                android:layout_width="84dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/hei_money_num"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/btn_relieve_xiaowei_type"
+                android:background="@drawable/xiaowei_radius_reset"
+                android:gravity="center"
+                android:text="重置网络"
+                android:textColor="#FF9F00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_relieve_xiaowei"
+                android:layout_width="84dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/hei_money_num"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/btn_reset_xiaowei"
+                android:background="@drawable/xiaowei_radius_relieve"
+                android:gravity="center"
+                android:text="解除关联"
+                android:textColor="#FF3500"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

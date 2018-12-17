@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <EditText
+        android:id="@+id/et_wifi_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/send_udp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送" />
+
+    <Button
+        android:id="@+id/send_tcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接TCP" />
+
+    <Button
+        android:id="@+id/send_tcp_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取热点信息" />
+
+    <TextView
+        android:id="@+id/text_respone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回数据：" />
+
+    <TextView
+        android:id="@+id/text_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="wifi" />
+
+    <EditText
+        android:id="@+id/et_wifi_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="wifi_psw" />
+
+    <Button
+        android:id="@+id/send_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配置网络" />
+
+    <TextView
+        android:id="@+id/text_wifi_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wifi：" />
+
+    <Button
+        android:id="@+id/send_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取小未信息" />
+
+    <TextView
+        android:id="@+id/text_xiaowei_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小未信息：" />
+</LinearLayout>

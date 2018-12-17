@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_to_theme_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/theme_bg"
+        android:layout_width="match_parent"
+        android:layout_height="214dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/moren" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theme_bg"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@color/color_333333"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="82dp"
+        android:paddingLeft="62dp"
+        android:paddingRight="80dp"
+        android:text="栗先达：专访 | 唯有音乐和
+       美食不可辜负"
+
+        />
+</RelativeLayout>

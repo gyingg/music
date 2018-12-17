@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/back_back" />
+
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/sliding_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                app:tl_indicator_height="0dp"
+                app:tl_tab_space_equal="true"
+                app:tl_tab_width="80dp"
+                app:tl_textSelectColor="@color/color_FF00AFFD"
+                app:tl_textUnselectColor="@color/color_ff999999"
+                app:tl_textsize="16dp" />
+
+            <ImageView
+                android:id="@+id/img_music"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:src="@mipmap/back_music" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

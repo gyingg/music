@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/decibel_forme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:text="听歌奖励"
+        android:textColor="@color/color_333333"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/decibel_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decibel_forme"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="2dp"
+        android:text="2012-12-12"
+        android:textColor="@color/color_999999"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/decibel_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:text="+10086"
+        android:textColor="@color/color_333333"
+        android:textSize="13dp" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/icon_white_background">
+
+    <RelativeLayout
+        android:id="@+id/btn_layout_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/xing_top_img"
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/test_one" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/xing_top_listvew"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="25dp"
+            android:text="周榜"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:layout_below="@+id/xing_top_img"
+            android:id="@+id/xing_top_listvew"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</FrameLayout>

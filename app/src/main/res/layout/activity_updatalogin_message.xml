@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.future_melody.activity.SafeAccountActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/back_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="修改登录密码"
+            android:textColor="@color/color_333333"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/ph_title_right_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:src="@mipmap/back_music" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="#f6f6f6"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/updata_login_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_999999"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:hint="请输入手机号"
+            android:textSize="13dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></View>
+
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="#f6f6f6"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/updata_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/color_999999"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:hint="请输入验证码"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/updata_login_password_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textSize="13dp"
+            android:textColor="@color/color_00AFFD"
+            android:text="获取验证码"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></View>
+
+
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="#f6f6f6"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/new_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:hint="设置新的登陆密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/color_999999"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+
+   <Button
+       android:id="@+id/updata_login"
+       android:layout_width="160dp"
+       android:layout_height="60dp"
+       android:text="确定"
+       android:layout_gravity="center"
+       android:textColor="@color/white"
+       android:layout_marginTop="130dp"
+       android:background="@mipmap/blue_but"
+       />
+</LinearLayout>

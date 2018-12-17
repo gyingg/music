@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_layout_to_player"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:background="@mipmap/icon_theme_details_music"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img_music_cover"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/test_one" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_text_song_name"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:text="I Always Knew"
+            android:textColor="#FF333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_text_sing_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:text="你好"
+            android:textColor="@color/color_666666"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

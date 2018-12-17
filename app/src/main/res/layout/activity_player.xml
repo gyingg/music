@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/player_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/test_one" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/icon_player_activity_bg" />
+
+    <ImageView
+        android:id="@+id/player_title_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:padding="7dp"
+        android:src="@mipmap/back" />
+
+    <ImageView
+        android:id="@+id/player_title_share"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="36dp"
+        android:padding="7dp"
+        android:src="@mipmap/icon_btn_share" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_img_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:text="songName"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sing_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="不知道写什么-"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sing_info"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="28dp"
+        android:maxHeight="1.5dp"
+        android:paddingEnd="7.5dp"
+        android:paddingLeft="7.5dp"
+        android:paddingRight="7.5dp"
+        android:paddingStart="7.5dp"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:secondaryProgressTint="#808077"
+        android:thumb="@drawable/seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#7a8db0"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="#7a8db0"
+        android:textSize="12sp" />
+
+    <include layout="@layout/view_player_include" />
+
+    <me.wcy.lrcview.LrcView
+        android:id="@+id/lrc_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_plaer_include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:text="暂无歌词"
+        android:textSize="14sp"
+        app:lrcAnimationDuration="1"
+        app:lrcCurrentTextColor="@color/color_00AFFD"
+        app:lrcTextSize="12sp"
+        app:lrcTimelineTextColor="@color/huaxian" />
+
+</RelativeLayout>

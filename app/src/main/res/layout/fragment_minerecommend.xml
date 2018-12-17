@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_btn_follows"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mine_circle_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/moren" />
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:textColor="@color/color_333333"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/mine_lighten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/color_666666"
+            android:text="来自火星上最无敌的小行星"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/mine_attention"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_height="25dp"
+            android:text="已关注"
+            android:layout_width="75dp"
+            android:textSize="12dp"
+            android:textColor="@color/color_666666"
+            android:background="@mipmap/addover"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

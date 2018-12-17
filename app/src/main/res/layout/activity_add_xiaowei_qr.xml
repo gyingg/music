@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/orange_back"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:padding="6dp"
+            android:src="@mipmap/back" />
+
+
+        <ImageView
+            android:id="@+id/ph_title_right_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:padding="5dp"
+            android:src="@mipmap/music" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/icon_xiaowei_bg_all">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img_jiaocheng"
+                android:layout_width="300dp"
+                android:layout_height="178dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:id="@+id/btn_qr_code"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/img_jiaocheng"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:src="@mipmap/icon_qr_code_btn" />
+
+            <TextView
+                android:id="@+id/text_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_qr_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="扫描小未音箱二维码"
+                android:textColor="@color/color_666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/qr_code_next"
+                android:layout_width="228dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text_qr_code"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:background="@mipmap/icon_qr_code_next"
+                android:gravity="center"
+                android:text="立即连接"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+ext {
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.1.0",
+            minSdkVersion    : 19,
+            targetSdkVersion : 23,
+            versionCode      : 15,
+            versionName      : "1.1.5"]
+
+    def dependVersion = [
+            support: "26.1.0",
+    ]
+}

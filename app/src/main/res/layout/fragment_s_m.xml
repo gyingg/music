@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cir_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/moren"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="12dp"
+            android:textColor="@color/color_00affd"
+            android:layout_toRightOf="@+id/cir_img"
+            android:text="未来声音【官方】"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:textSize="9dp"
+            android:textColor="@color/color_999999"
+            android:layout_alignParentRight="true"
+            android:text="一分钟前"
+            />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_333333"
+            android:textSize="13dp"
+            android:text="活动：哇～又到了这个草长莺飞的季节，瞧见窗外明晃晃的阳光和嘻闹的人群了吗？花开得那样好，总要听些好歌，才不负这春光呀！特此献上红蓝音乐节门票给您" />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

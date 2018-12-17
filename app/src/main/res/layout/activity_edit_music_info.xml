@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ImageView
+        android:id="@+id/music_imgage"
+        android:layout_width="116dp"
+        android:layout_height="116dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_add_music_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="音乐封面"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="32dp"
+        android:background="@color/color_f6f6f6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="音乐名称:"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_edit_music_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/marginRight"
+            android:layout_weight="1"
+            android:background="@color/touming"
+            android:singleLine="true"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_f6f6f6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="歌手名字:"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+
+        <EditText
+            android:id="@+id/et_edit_music_singer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/sp_14"
+            android:layout_weight="1"
+            android:background="@color/touming"
+            android:singleLine="true"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginTop="40dp"
+        android:text="选择音乐标签"
+        android:textColor="#FF333333"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/radiobutton_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="摇滚"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/radiobutton_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="民谣"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/radiobutton_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="流行"
+            android:textSize="@dimen/sp_14" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/radiobutton_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="古风"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/icon_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="上传"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/copyright_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="上传及同意《未来声音作品版权声明》条款约束"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="如涉及侵权自行承担法律责任"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp_10" />
+</LinearLayout>

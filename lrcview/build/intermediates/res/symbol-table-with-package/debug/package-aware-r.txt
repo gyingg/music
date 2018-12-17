@@ -1,0 +1,29 @@
+me.wcy.lrcview
+attr lrcAnimationDuration
+attr lrcCurrentTextColor
+attr lrcDividerHeight
+attr lrcLabel
+attr lrcNormalTextColor
+attr lrcPadding
+attr lrcPlayDrawable
+attr lrcTextSize
+attr lrcTimeTextColor
+attr lrcTimeTextSize
+attr lrcTimelineColor
+attr lrcTimelineHeight
+attr lrcTimelineTextColor
+color lrc_current_text_color
+color lrc_normal_text_color
+color lrc_time_text_color
+color lrc_timeline_color
+color lrc_timeline_text_color
+dimen lrc_divider_height
+dimen lrc_drawable_width
+dimen lrc_text_size
+dimen lrc_time_text_size
+dimen lrc_time_width
+dimen lrc_timeline_height
+drawable lrc_play
+integer lrc_animation_duration
+string lrc_label
+styleable LrcView lrcAnimationDuration lrcCurrentTextColor lrcDividerHeight lrcLabel lrcNormalTextColor lrcPadding lrcPlayDrawable lrcTextSize lrcTimeTextColor lrcTimeTextSize lrcTimelineColor lrcTimelineHeight lrcTimelineTextColor

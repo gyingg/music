@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/stat_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="5dp" />
+        <TextView
+            android:id="@+id/stat_name"
+            android:layout_toRightOf="@+id/stat_icon"
+            android:layout_alignTop="@+id/stat_icon"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:text="名字"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/color_333333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/stat_lighten"
+            android:layout_alignLeft="@+id/stat_name"
+            android:layout_alignBottom="@+id/stat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="来自巴比龙推荐"
+            android:textSize="10dp"
+            android:textColor="@color/color_999999" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/select_stat"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:checked="false" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="178dp"
+        android:background="@drawable/white_radius_bg">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="音乐上传中"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/upload_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="0%"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHorizontal"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="3dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:max="100"
+            android:progress="0"
+            android:indeterminateDrawable="@drawable/seekbar_thumb"
+            android:progressDrawable="@drawable/uploadmusic_progress"
+            android:secondaryProgress="100" />
+
+        <TextView
+            android:id="@+id/btn_clancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="25dp"
+            android:padding="8dp"
+            android:text="取消上传"
+            android:textColor="@color/appColor"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>
