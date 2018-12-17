@@ -32,6 +32,8 @@ public class AboutUsActivity extends BaseActivity implements View.OnClickListene
     private TextView tv_code_version;
 
 
+
+
     @Override
     protected int getContentViewId() {
         return R.layout.activity_about_us;
